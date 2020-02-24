@@ -10,8 +10,8 @@ Basically she asked me to create a game where there are a whole bunch of little 
 
 I am writing these steps before I start the app so that I can plan what I want to do.
 
-- [ ] Create balls
-- [ ] Most of the balls should be at the top of the page
+- [x] Create balls
+- [x] Most of the balls should be at the top of the page
 - [ ] Make the balls 2-3 random colors from a selection of 5 colors, but clustered around balls of the same color.
 - [ ] Create animation that propels one ball from the right bottom of the page to the group of balls.
 - [ ] Make the group of balls disappear if the color of the ball that is propelled hits the group of balls of the same color.
