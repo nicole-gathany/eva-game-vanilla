@@ -3,5 +3,16 @@ svg {
 }
 
 .top-balls:hover {
-  transform: scale(1.5);
+  animation: ball-grow ease-out 500ms;
+}
+@keyframes ball-grow {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.5);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
