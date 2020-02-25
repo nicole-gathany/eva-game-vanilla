@@ -16,6 +16,7 @@ I am writing these steps before I start the app so that I can plan what I want t
 - [ ] Create animation that propels one ball from the right bottom of the page to the group of balls.
 - [ ] Make the group of balls disappear if the color of the ball that is propelled hits the group of balls of the same color.
 - [ ] Maybe the user ball can be moved based on where the mouse is and then be propelled that way?
+- [ ] Make the ball move with cursor at the right side of the page and the bottom of the page
 
 ## Animations
 
