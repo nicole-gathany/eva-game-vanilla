@@ -2,7 +2,7 @@ svg {
   border: 3px solid red;
 }
 
-.top-balls:hover {
+/* .top-balls:hover {
   animation: ball-grow ease-out 500ms;
 }
 @keyframes ball-grow {
@@ -15,4 +15,4 @@ svg {
   100% {
     transform: scaleX(1);
   }
-}
+} */
