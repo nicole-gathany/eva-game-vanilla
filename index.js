@@ -7,6 +7,8 @@ console.log("javascript index works");
 function myPlay() {
   console.log(" clicking random ball works");
   let elem = document.getElementById("random-ball");
+  let colorNum = Math.round(Math.random() * 10);
+  console.log(colorNum);
 
   elem.style.fill = "blue";
 }
