@@ -17,10 +17,10 @@ svg {
   }
 } */
 
-#random-ball {
-  animation-name: fire;
-  animation-duration: 2s;
+.yellow-balls:hover {
+  animation-name: swosh;
+  animation-timing-function: ease-out;
 }
 
-@keyframes fire {
+@keyframes swosh {
 }
