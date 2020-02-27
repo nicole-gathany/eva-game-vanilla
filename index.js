@@ -21,6 +21,9 @@ function myColor() {
   } else if (colorNum >= 8 && colorNum <= 10) {
     elem.style.fill = "green";
   }
+
+  elem.style.cx = 1300;
+  elem.style.cy = 550;
 }
 
 function myPlay() {
