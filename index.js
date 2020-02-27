@@ -6,7 +6,7 @@ console.log("javascript index works");
 
 function myColor() {
   console.log(" clicking random ball works");
-  let elem = document.getElementById("random-ball");
+  let elem = document.getElementById("this-ball");
   let colorNum = Math.round(Math.random() * 10);
   console.log(colorNum);
 
