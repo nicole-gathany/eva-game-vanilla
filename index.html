@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balls</title>
     <link rel="stylesheet" href="index.css" />
-    <script type="text/javascript" src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
   </head>
   <body>
-    <svg class="top-balls" width="300" height="300">
+    <svg class="top-balls" width="1325" height="600">
       <!--I think I want 6-8 of each color ball-->
       <!-- red circles are here -->
       <g class="red balls">
@@ -70,6 +68,10 @@
         <circle r="20" cx="120" cy="190" fill="green"></circle>
         <circle r="20" cx="300" cy="0" fill="green"></circle>
       </g>
+      <!--random ball-->
+      <g>
+        <circle r="20" cx="1300" cy="600"></circle>
+      </g>
 
       <!--apparently pintool in adobe photoshot could help make this process faster-->
       <!--making a circle from a polygon because I think it would help me with the animation later (paths)-->
@@ -80,17 +82,20 @@
       ></polygon> -->
     </svg>
     <!--the lone ball-->
-    <svg width="300" height="300" viewBox="30 30 60 60">
-      <!--I'm not seeing these other balls sadly-->
-      <circle r="20" cx="400" cy="0" fill="green"></circle>
-    </svg>
-    <svg width="300" height="300" viewBox="30 30 60 60"></svg>
+    <!-- <svg width="300" height="300" viewBox="30 30 60 60"> -->
+    <!--I'm not seeing these other balls sadly-->
+    <!-- <circle r="20" cx="400" cy="0" fill="green"></circle>
+    </svg> -->
+    <!-- <svg width="300" height="300" viewBox="30 30 60 60"></svg>
     <svg width="300" height="300" viewBox="30 30 60 60"></svg>
     <svg width="300" height="300" viewBox="30 30 60 60"></svg>
     <svg width="300" height="300" viewBox="30 30 60 60"></svg>
     <svg width="300" height="300" viewBox="30 30 60 60"></svg>
     <svg width="300" height="300" viewBox="30 30 60 60">
       <circle r="20" cx="2400" cy="2400" fill="green"></circle>
-    </svg>
+    </svg> -->
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
   </body>
 </html>
