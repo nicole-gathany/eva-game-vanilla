@@ -29,13 +29,18 @@ function myPlay() {
   let relativePos = 0;
   //not sure about setInterval, may need to look that up
   //what is the handler??
-  let id = setInterval(frame, 2);
+  let id = setInterval(frame, 10);
   function frame() {
-    if (element.style.cx === 0 && element.style.cy === 0) {
+    if (
+      (element.style.cx <= 0 && element.style.cy <= 0) ||
+      (element.style.cx > 2000 && element.style.cy > 1000)
+    ) {
       clearInterval(id);
     } else {
-      element.style.cx -= 100;
-      element.style.cy -= 100;
+      element.style.cx--;
+      element.style.cy--;
     }
   }
+  console.log(element.style.cx + " is cx");
+  console.log(element.style.cy + " is cy");
 }
