@@ -26,7 +26,16 @@ function myColor() {
 function myPlay() {
   console.log("fire button works");
   let element = document.getElementById("this-ball");
-
-  element.style.cx = 1000;
-  element.style.cy = 500;
+  let relativePos = 0;
+  //not sure about setInterval, may need to look that up
+  //what is the handler??
+  let id = setInterval(frame, 2);
+  function frame() {
+    if (element.style.cx === 0 && element.style.cy === 0) {
+      clearInterval(id);
+    } else {
+      element.style.cx -= 100;
+      element.style.cy -= 100;
+    }
+  }
 }
