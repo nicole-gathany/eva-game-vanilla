@@ -6,4 +6,7 @@ console.log("javascript index works");
 
 function myPlay() {
   console.log(" clicking random ball works");
+  let elem = document.getElementById("random-ball");
+
+  elem.style.fill = "blue";
 }

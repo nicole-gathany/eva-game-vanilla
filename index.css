@@ -16,3 +16,15 @@ svg {
     transform: scaleX(1);
   }
 } */
+
+#random-ball {
+  position: absolute;
+  fill: red;
+}
+
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
