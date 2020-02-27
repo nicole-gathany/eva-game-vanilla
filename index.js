@@ -32,13 +32,14 @@ function myPlay() {
   let id = setInterval(frame, 10);
   function frame() {
     if (
-      (element.style.cx <= 0 && element.style.cy <= 0) ||
+      (element.style.cx < 0 && element.style.cy < 0) ||
       (element.style.cx > 2000 && element.style.cy > 1000)
     ) {
       clearInterval(id);
     } else {
-      element.style.cx--;
-      element.style.cy--;
+      //   element.style.cx--;
+      //   element.style.cy--;
+      console.log("hello");
     }
   }
   console.log(element.style.cx + " is cx");
