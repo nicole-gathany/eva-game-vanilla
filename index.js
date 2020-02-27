@@ -31,21 +31,23 @@ function myPlay() {
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
-  let id = setInterval(frame, 2500);
+  //i want to know if this is too fast
+  let id = setInterval(frame, 250);
   function frame() {
     if (
-      (element.style.cx < 0 && element.style.cy < 0) ||
-      (element.style.cx > 1300 && element.style.cy > 550)
+      //maybe this will be for the yellow balls
+      element.style.cx < 0 ||
+      element.style.cy < 0
     ) {
       clearInterval(id);
     } else {
-      relativePosX -= 100;
-      relativePosY -= 100;
+      relativePosX -= 10;
+      relativePosY -= 10;
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
       console.log(relativePosX);
+      console.log(element.style.cx + " is cx");
+      console.log(element.style.cy + " is cy");
     }
   }
-  console.log(element.style.cx + " is cx");
-  console.log(element.style.cy + " is cy");
 }
