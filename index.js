@@ -25,4 +25,8 @@ function myColor() {
 
 function myPlay() {
   console.log("fire button works");
+  let element = document.getElementById("this-ball");
+
+  element.style.cx = 1000;
+  element.style.cy = 500;
 }
