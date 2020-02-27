@@ -4,7 +4,7 @@
 
 console.log("javascript index works");
 
-function myPlay() {
+function myColor() {
   console.log(" clicking random ball works");
   let elem = document.getElementById("random-ball");
   let colorNum = Math.round(Math.random() * 10);
@@ -21,4 +21,8 @@ function myPlay() {
   } else if (colorNum >= 8 && colorNum <= 10) {
     elem.style.fill = "green";
   }
+}
+
+function myPlay() {
+  console.log("fire button works");
 }
