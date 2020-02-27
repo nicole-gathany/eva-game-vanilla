@@ -41,7 +41,7 @@ function myPlay() {
     ) {
       clearInterval(id);
     } else {
-      relativePosX -= 100;
+      relativePosX -= 50;
       relativePosY -= 10;
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
