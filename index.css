@@ -18,9 +18,14 @@ svg {
 } */
 
 .yellow-balls:hover {
-  animation-name: swosh;
-  animation-timing-function: ease-out;
+  animation: swosh ease-out 500ms;
 }
 
 @keyframes swosh {
+  from {
+    fill: yellow;
+  }
+  to {
+    fill: white;
+  }
 }
