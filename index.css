@@ -17,7 +17,7 @@ svg {
   }
 } */
 /*don't work*/
-.yellow-balls:hover {
+/* .yellow-balls:hover {
   animation: swosh ease-out 500ms;
 }
 
@@ -28,9 +28,9 @@ svg {
   to {
     fill: white;
   }
-}
+} */
 
 /*also doesn't work*/
-.top-balls:hover {
-  transition: cx 2s, cy 4s;
+.top-balls {
+  transition-timing-function: ease;
 }
