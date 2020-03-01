@@ -58,15 +58,15 @@ function myPlay() {
 function changeYellow() {
   // let elementRandom = document.getElementById("this-ball");
   //getElementsById() is not a function
-  let elementYellow = document.getElementById("yellow-ball-1");
+  let elementYellow1 = document.getElementById("yellow-ball-1");
   let id = setInterval(frame, 250);
   //does notwork and it's saying it cannot find style of null
   function frame() {
-    if ((elementYellow.style.fill = "green")) {
+    if (elementYellow1.style.fill === "white") {
       clearInterval(id);
     } else {
-      elementYellow.style.fill = "green";
+      elementYellow1.style.fill = "white";
     }
   }
-  console.log(elementYellow);
+  console.log(elementYellow1);
 }
