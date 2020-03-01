@@ -27,6 +27,7 @@ function myColor() {
 }
 
 function myPlay() {
+  //for some reason it won't fire anymore
   console.log("fire button works");
   let element = document.getElementById("this-ball");
   let relativePosX = 0;
