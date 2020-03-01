@@ -31,7 +31,7 @@ function myPlay() {
   let element = document.getElementById("this-ball");
   let relativePosX = 0;
   let relativePosY = 0;
-  let elementYellow = document.getElementsByClassName("yellow-balls");
+  let elementYellow = document.getElementsById("yellow-balls");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
@@ -53,11 +53,11 @@ function myPlay() {
       console.log(element.style.cx + " is cx");
       console.log(element.style.cy + " is cy");
     }
-    if (
-      (element.style.fill =
-        "yellow" && element.style.cx < 300 && element.style.cy < 300)
-    ) {
-      elementYellow.style.fill = "green";
-    }
   }
+  // if (
+  //   (element.style.fill =
+  //     "yellow" && element.style.cx < 300 && element.style.cy < 300)
+  // ) {
+  //   elementYellow.style.fill = "green";
+  // }
 }
