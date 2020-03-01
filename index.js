@@ -24,6 +24,7 @@ function myColor() {
 
   elem.style.cx = 1300;
   elem.style.cy = 550;
+  console.log(elem.style.fill);
 }
 
 function myPlay() {
@@ -69,6 +70,8 @@ function myPlay() {
         elementYellow7.style.fill = "white";
         elementYellow8.style.fill = "white";
         elementYellow9.style.fill = "white";
+      } else if (element.style.cx < 120 && element.style.fill === "green") {
+        console.log("what's good, homie?");
       }
     }
   }
