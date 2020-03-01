@@ -59,13 +59,20 @@ function changeYellow() {
   // let elementRandom = document.getElementById("this-ball");
   //getElementsById() is not a function
   let elementYellow1 = document.getElementById("yellow-ball-1");
+  //I want to know if you can have more than one element in a function
+  //it turns out you can
+  let elementYellow2 = document.getElementById("yellow-ball-2");
   let id = setInterval(frame, 250);
   //does notwork and it's saying it cannot find style of null
   function frame() {
-    if (elementYellow1.style.fill === "white") {
+    if (
+      elementYellow1.style.fill === "white" &&
+      elementYellow2.style.fill === "white"
+    ) {
       clearInterval(id);
     } else {
       elementYellow1.style.fill = "white";
+      elementYellow2.style.fill = "white";
     }
   }
   console.log(elementYellow1);
