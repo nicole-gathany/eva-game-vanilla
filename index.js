@@ -77,13 +77,16 @@ function myPlay() {
         if (element.style.cx < 300) {
           elementYellow9.style.fill = "white";
           elementYellow7.style.fill = "white";
-        } else if (element.style.cx < 250) {
+        }
+        if (element.style.cx < 250) {
           elementYellow6.style.fill = "white";
           elementYellow4.style.fill = "white";
           elementYellow3.style.fill = "white";
-        } else if (element.style.cx < 200) {
+        }
+        if (element.style.cx < 200) {
           elementYellow2.style.fill = "white";
-        } else if (element.style.cx < 150) {
+        }
+        if (element.style.cx < 150) {
           elementYellow1.style.fill = "white";
 
           elementYellow5.style.fill = "white";
