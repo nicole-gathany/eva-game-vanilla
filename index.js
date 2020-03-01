@@ -51,6 +51,7 @@ function myPlay() {
       element.style.cy = 550 + relativePosY;
       //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
       if (element.style.cx < 300 && element.style.fill === "yellow") {
+        //it works now for some reason
         elementYellow1.style.fill = "white";
       }
     }
