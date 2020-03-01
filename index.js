@@ -49,7 +49,7 @@ function myPlay() {
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
       //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
-      if (element.style.cx < 300) {
+      if (element.style.cx < 300 && element.style.fill === "yellow") {
         console.log("we here");
       }
     }
