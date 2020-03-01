@@ -53,7 +53,7 @@ function myPlay() {
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
   //i want to know if this is too fast
-  let id = setInterval(frame, 250);
+  let id = setInterval(frame, 20);
   function frame() {
     if (
       //maybe this will be for the yellow balls
@@ -62,8 +62,8 @@ function myPlay() {
     ) {
       clearInterval(id);
     } else {
-      relativePosX -= 40;
-      relativePosY -= 10;
+      relativePosX -= 100;
+      relativePosY -= 30;
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
       //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
