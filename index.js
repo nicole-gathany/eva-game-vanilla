@@ -48,6 +48,10 @@ function myPlay() {
       relativePosY -= 10;
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
+      //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
+      if (element.style.cx < 300) {
+        console.log("we here");
+      }
     }
   }
 }
@@ -69,9 +73,9 @@ function changeYellow() {
   let elementYellow7 = document.getElementById("yellow-ball-7");
   let elementYellow8 = document.getElementById("yellow-ball-8");
   let elementYellow9 = document.getElementById("yellow-ball-9");
-  let id = setInterval(frame, 250);
+  let id = setInterval(frame2, 250);
   //does notwork and it's saying it cannot find style of null
-  function frame() {
+  function frame2() {
     if (
       elementYellow1.style.fill === "white" &&
       elementYellow2.style.fill === "white" &&
@@ -97,4 +101,7 @@ function changeYellow() {
     }
   }
   console.log(elementYellow1);
+  console.log(elementYellow2);
+  console.log(elementYellow3);
+  console.log(elementYellow4);
 }
