@@ -54,9 +54,10 @@ function myPlay() {
 
 //I tried this by putting the element into the balls, but it wouldn't work i think that might be because the computer cannot read id's within the g tags, i'm not sure
 //this didn't technically work but it kind of worked because the documentation fill said it changed to green
+
 function changeYellow() {
   // let elementRandom = document.getElementById("this-ball");
-  let elementYellow = document.getElementById("yellow-balls");
+  let elementYellow = document.getElementsByClassName("yellow-balls");
   let id = setInterval(frame, 250);
   function frame() {
     if ((elementYellow.style.fill = "green")) {
