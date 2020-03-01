@@ -31,6 +31,7 @@ function myPlay() {
   let element = document.getElementById("this-ball");
   let relativePosX = 0;
   let relativePosY = 0;
+  let elementYellow1 = document.getElementById("yellow-ball-1");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
@@ -50,7 +51,7 @@ function myPlay() {
       element.style.cy = 550 + relativePosY;
       //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
       if (element.style.cx < 300 && element.style.fill === "yellow") {
-        console.log("we here");
+        elementYellow1.style.fill = "white";
       }
     }
   }
