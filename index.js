@@ -32,6 +32,14 @@ function myPlay() {
   let relativePosX = 0;
   let relativePosY = 0;
   let elementYellow1 = document.getElementById("yellow-ball-1");
+  let elementYellow2 = document.getElementById("yellow-ball-2");
+  let elementYellow3 = document.getElementById("yellow-ball-3");
+  let elementYellow4 = document.getElementById("yellow-ball-4");
+  let elementYellow5 = document.getElementById("yellow-ball-5");
+  let elementYellow6 = document.getElementById("yellow-ball-6");
+  let elementYellow7 = document.getElementById("yellow-ball-7");
+  let elementYellow8 = document.getElementById("yellow-ball-8");
+  let elementYellow9 = document.getElementById("yellow-ball-9");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
@@ -53,57 +61,15 @@ function myPlay() {
       if (element.style.cx < 300 && element.style.fill === "yellow") {
         //it works now for some reason
         elementYellow1.style.fill = "white";
+        elementYellow2.style.fill = "white";
+        elementYellow3.style.fill = "white";
+        elementYellow4.style.fill = "white";
+        elementYellow5.style.fill = "white";
+        elementYellow6.style.fill = "white";
+        elementYellow7.style.fill = "white";
+        elementYellow8.style.fill = "white";
+        elementYellow9.style.fill = "white";
       }
     }
   }
-}
-
-//I tried this by putting the element into the balls, but it wouldn't work i think that might be because the computer cannot read id's within the g tags, i'm not sure
-//this didn't technically work but it kind of worked because the documentation fill said it changed to green
-
-function changeYellow() {
-  // let elementRandom = document.getElementById("this-ball");
-  //getElementsById() is not a function
-  let elementYellow1 = document.getElementById("yellow-ball-1");
-  //I want to know if you can have more than one element in a function
-  //it turns out you can
-  let elementYellow2 = document.getElementById("yellow-ball-2");
-  let elementYellow3 = document.getElementById("yellow-ball-3");
-  let elementYellow4 = document.getElementById("yellow-ball-4");
-  let elementYellow5 = document.getElementById("yellow-ball-5");
-  let elementYellow6 = document.getElementById("yellow-ball-6");
-  let elementYellow7 = document.getElementById("yellow-ball-7");
-  let elementYellow8 = document.getElementById("yellow-ball-8");
-  let elementYellow9 = document.getElementById("yellow-ball-9");
-  let id = setInterval(frame2, 250);
-  //does notwork and it's saying it cannot find style of null
-  function frame2() {
-    if (
-      elementYellow1.style.fill === "white" &&
-      elementYellow2.style.fill === "white" &&
-      elementYellow3.style.fill === "white" &&
-      elementYellow4.style.fill === "white" &&
-      elementYellow5.style.fill === "white" &&
-      elementYellow6.style.fill === "white" &&
-      elementYellow7.style.fill === "white" &&
-      elementYellow8.style.fill === "white" &&
-      elementYellow9.style.fill === "white"
-    ) {
-      clearInterval(id);
-    } else {
-      elementYellow1.style.fill = "white";
-      elementYellow2.style.fill = "white";
-      elementYellow3.style.fill = "white";
-      elementYellow4.style.fill = "white";
-      elementYellow5.style.fill = "white";
-      elementYellow6.style.fill = "white";
-      elementYellow7.style.fill = "white";
-      elementYellow8.style.fill = "white";
-      elementYellow9.style.fill = "white";
-    }
-  }
-  console.log(elementYellow1);
-  console.log(elementYellow2);
-  console.log(elementYellow3);
-  console.log(elementYellow4);
 }
