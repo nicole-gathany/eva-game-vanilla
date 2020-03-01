@@ -67,17 +67,29 @@ function myPlay() {
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
       //writing to see if it's possible to make something happen when the ball is in a certain place other than clear interval
-      if (element.style.cx < 300 && element.style.fill === "yellow") {
+      if (element.style.fill === "yellow") {
         //it works now for some reason
-        elementYellow1.style.fill = "white";
-        elementYellow2.style.fill = "white";
-        elementYellow3.style.fill = "white";
-        elementYellow4.style.fill = "white";
-        elementYellow5.style.fill = "white";
-        elementYellow6.style.fill = "white";
-        elementYellow7.style.fill = "white";
-        elementYellow8.style.fill = "white";
-        elementYellow9.style.fill = "white";
+        //balls near cx===300 are 9, 7,
+        //balls near cx===250 are 6, 4, 3
+        //balls near cx===200 are 2
+        //cx===150 are 1, 5 and 8
+        //this only worked for 9 and 7 for some reason
+        if (element.style.cx < 300) {
+          elementYellow9.style.fill = "white";
+          elementYellow7.style.fill = "white";
+        } else if (element.style.cx < 250) {
+          elementYellow6.style.fill = "white";
+          elementYellow4.style.fill = "white";
+          elementYellow3.style.fill = "white";
+        } else if (element.style.cx < 200) {
+          elementYellow2.style.fill = "white";
+        } else if (element.style.cx < 150) {
+          elementYellow1.style.fill = "white";
+
+          elementYellow5.style.fill = "white";
+
+          elementYellow8.style.fill = "white";
+        }
       } else if (element.style.cx < 120 && element.style.fill === "green") {
         green1.style.fill = "white";
         green2.style.fill = "white";
