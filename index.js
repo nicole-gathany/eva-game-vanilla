@@ -62,17 +62,38 @@ function changeYellow() {
   //I want to know if you can have more than one element in a function
   //it turns out you can
   let elementYellow2 = document.getElementById("yellow-ball-2");
+  let elementYellow3 = document.getElementById("yellow-ball-3");
+  let elementYellow4 = document.getElementById("yellow-ball-4");
+  let elementYellow5 = document.getElementById("yellow-ball-5");
+  let elementYellow6 = document.getElementById("yellow-ball-6");
+  let elementYellow7 = document.getElementById("yellow-ball-7");
+  let elementYellow8 = document.getElementById("yellow-ball-8");
+  let elementYellow9 = document.getElementById("yellow-ball-9");
   let id = setInterval(frame, 250);
   //does notwork and it's saying it cannot find style of null
   function frame() {
     if (
       elementYellow1.style.fill === "white" &&
-      elementYellow2.style.fill === "white"
+      elementYellow2.style.fill === "white" &&
+      elementYellow3.style.fill === "white" &&
+      elementYellow4.style.fill === "white" &&
+      elementYellow5.style.fill === "white" &&
+      elementYellow6.style.fill === "white" &&
+      elementYellow7.style.fill === "white" &&
+      elementYellow8.style.fill === "white" &&
+      elementYellow9.style.fill === "white"
     ) {
       clearInterval(id);
     } else {
       elementYellow1.style.fill = "white";
       elementYellow2.style.fill = "white";
+      elementYellow3.style.fill = "white";
+      elementYellow4.style.fill = "white";
+      elementYellow5.style.fill = "white";
+      elementYellow6.style.fill = "white";
+      elementYellow7.style.fill = "white";
+      elementYellow8.style.fill = "white";
+      elementYellow9.style.fill = "white";
     }
   }
   console.log(elementYellow1);
