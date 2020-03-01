@@ -31,7 +31,7 @@ function myPlay() {
   let element = document.getElementById("this-ball");
   let relativePosX = 0;
   let relativePosY = 0;
-  let elementYellow = document.getElementById("yellow-balls");
+  let elementYellow = document.getElementsByClassName("yellow-balls");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
