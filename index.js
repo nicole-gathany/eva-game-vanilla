@@ -41,6 +41,14 @@ function myPlay() {
   let elementYellow7 = document.getElementById("yellow-ball-7");
   let elementYellow8 = document.getElementById("yellow-ball-8");
   let elementYellow9 = document.getElementById("yellow-ball-9");
+
+  let green1 = document.getElementById("green-ball-1");
+  let green2 = document.getElementById("green-ball-2");
+  let green3 = document.getElementById("green-ball-3");
+  let green4 = document.getElementById("green-ball-4");
+  let green5 = document.getElementById("green-ball-5");
+  let green6 = document.getElementById("green-ball-6");
+  let green7 = document.getElementById("green-ball-7");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
@@ -71,7 +79,13 @@ function myPlay() {
         elementYellow8.style.fill = "white";
         elementYellow9.style.fill = "white";
       } else if (element.style.cx < 120 && element.style.fill === "green") {
-        console.log("what's good, homie?");
+        green1.style.fill = "white";
+        green2.style.fill = "white";
+        green3.style.fill = "white";
+        green4.style.fill = "white";
+        green5.style.fill = "white";
+        green6.style.fill = "white";
+        green7.style.fill = "white";
       }
     }
   }
