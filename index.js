@@ -27,12 +27,10 @@ function myColor() {
 }
 
 function myPlay() {
-  //for some reason it won't fire anymore
   console.log("fire button works");
   let element = document.getElementById("this-ball");
   let relativePosX = 0;
   let relativePosY = 0;
-  let elementYellow = document.getElementsById("yellow-balls");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
@@ -50,15 +48,19 @@ function myPlay() {
       relativePosY -= 10;
       element.style.cx = 1300 + relativePosX;
       element.style.cy = 550 + relativePosY;
-      console.log(relativePosX);
-      console.log(element.style.cx + " is cx");
-      console.log(element.style.cy + " is cy");
     }
   }
-  // if (
-  //   (element.style.fill =
-  //     "yellow" && element.style.cx < 300 && element.style.cy < 300)
-  // ) {
-  //   elementYellow.style.fill = "green";
-  // }
+}
+
+//I tried this by putting the element into the balls, but it wouldn't work i think that might be because the computer cannot read id's within the g tags, i'm not sure
+function changeYellow() {
+  // let elementRandom = document.getElementById("this-ball");
+  let elementYellow = document.getElementById("yellow-balls");
+  let id = setInterval(frame, 250);
+  function frame() {
+    if ((elementYellow.style.fill = "green")) {
+      clearInterval(id);
+    }
+    elementYellow.style.fill = "green";
+  }
 }
