@@ -57,7 +57,7 @@ function myPlay() {
 
 function changeYellow() {
   // let elementRandom = document.getElementById("this-ball");
-  let elementYellow = document.getElementsByClassName("yellow-balls");
+  let elementYellow = document.getElementsById("yellow-ball-1");
   let id = setInterval(frame, 250);
   function frame() {
     if ((elementYellow.style.fill = "green")) {
