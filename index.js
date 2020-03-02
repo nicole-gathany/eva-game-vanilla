@@ -93,14 +93,28 @@ function myPlay() {
 
           elementYellow8.style.fill = "white";
         }
-      } else if (element.style.cx < 120 && element.style.fill === "green") {
-        green1.style.fill = "white";
-        green2.style.fill = "white";
-        green3.style.fill = "white";
-        green4.style.fill = "white";
-        green5.style.fill = "white";
-        green6.style.fill = "white";
-        green7.style.fill = "white";
+        //
+      } else if (element.style.fill === "green") {
+        if (element.style.cx < 130) {
+          green6.style.fill = "white";
+          green7.style.fill = "white";
+        }
+        //this did not work they way i thought it would. it's possible that this is because the cx values are actually string values
+        if (element.style.cx < green1.style.cx) {
+          green1.style.fill = "white";
+        }
+        if (element.style.cx < green2.style.cx) {
+          green2.style.fill = "white";
+        }
+        if (element.style.cx < green3.style.fill) {
+          green3.style.fill = "white";
+        }
+        if (element.style.cx < green4.style.cx) {
+          green4.style.fill = "white";
+        }
+        if (element.style.cx < green5.style.cx) {
+          green5.style.fill = "white";
+        }
       }
     }
   }
