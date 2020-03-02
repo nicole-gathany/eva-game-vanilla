@@ -18,6 +18,7 @@ I am writing these steps before I start the app so that I can plan what I want t
 - [ ] Maybe the user ball can be moved based on where the mouse is and then be propelled that way?
 - [ ] Make the ball move with cursor at the right side of the page and the bottom of the page
 - [ ] Make more balls across the page
+- [ ] I think I actually want the random ball to fall back down after hitting the balls it makes disappear
 
 ## Animations
 
