@@ -74,6 +74,7 @@ function myPlay() {
         element.style.cy = 550 + relativePosY;
       }
 
+      //this aims higher like we like when the yellow ones are white
       if (elementYellow1.style.fill === "white") {
         relativePosX -= 100;
         relativePosY -= 60;
