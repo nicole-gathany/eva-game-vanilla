@@ -55,7 +55,7 @@ function myPlay() {
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
   //i want to know if this is too fast
-  let id = setInterval(frame, 20);
+  let id = setInterval(frame, 100);
   function frame() {
     if (
       //maybe this will be for the yellow balls
@@ -102,19 +102,19 @@ function myPlay() {
           green7.style.fill = "white";
         }
         //this did not work they way i thought it would. it's possible that this is because the cx values are actually string values
-        if (element.style.cx < green1.style.cx) {
+        if (element.style.cx < 20) {
           green1.style.fill = "white";
         }
-        if (element.style.cx < green2.style.cx) {
+        if (element.style.cx < 30) {
           green2.style.fill = "white";
         }
-        if (element.style.cx < green3.style.fill) {
+        if (element.style.cx < 60) {
           green3.style.fill = "white";
         }
-        if (element.style.cx < green4.style.cx) {
+        if (element.style.cx < 75) {
           green4.style.fill = "white";
         }
-        if (element.style.cx < green5.style.cx) {
+        if (element.style.cx < 95) {
           green5.style.fill = "white";
         }
       }
