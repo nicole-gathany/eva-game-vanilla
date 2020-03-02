@@ -49,6 +49,8 @@ function myPlay() {
   let green5 = document.getElementById("green-ball-5");
   let green6 = document.getElementById("green-ball-6");
   let green7 = document.getElementById("green-ball-7");
+  //it looks like it's not reading it at all, so for now i might i have to do this the hard way
+  console.log(green1.style.cx + " is where the green ball 1 is ");
   //not sure about setInterval, may need to look that up
   //what is the handler??
   //didn't realize that the second part of setInterval was in ms. that explains a lot
