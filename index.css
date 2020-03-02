@@ -34,3 +34,10 @@ svg {
 .top-balls {
   transition-timing-function: ease;
 }
+
+#this-ball:hover .move-right {
+  transform: translate(350px, 0);
+  -webkit-transform: translate(350px, 0); /** Chrome & Safari **/
+  -o-transform: translate(350px, 0); /** Opera **/
+  -moz-transform: translate(350px, 0); /** Firefox **/
+}
