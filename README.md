@@ -14,7 +14,7 @@ I am writing these steps before I start the app so that I can plan what I want t
 - [x] Most of the balls should be at the top of the page
 - [x] Make the balls 2-3 random colors from a selection of 5 colors, but clustered around balls of the same color.
 - [x] Create animation that propels one ball from the right bottom of the page to the group of balls.
-- [ ] Make the group of balls disappear if the color of the ball that is propelled hits the group of balls of the same color.
+- [ ] Make the group of balls disappear if the color of the ball that is propelled hits the group of balls of the same color. (only works for yellow and green so far but with many lines of code. I need to see if I can reduce the number of lines of code by controlling the colors by class)
 - [ ] Maybe the user ball can be moved based on where the mouse is and then be propelled that way?
 - [ ] Make the ball move with cursor at the right side of the page and the bottom of the page
 - [ ] Make more balls across the page
